@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+	<title> Formulário </title>
+   <style type="text/css">
+      .esconder{
+         display: none;
+      }
+      .show{
+         display: block;
+      }
+      .hr{
+         display: none;
+      }
+   </style>
+</head>
+<h1 id="title"> Formulário em Java Script </h1>
+<body> <!--onsubmit="pegarDados()-->
+ <form>
+ 	<p> Digite seu nome:<input type="text" id="texto"></p> <!-- CAMPO PARA TEXTO -->
+ 	<p> Digite seu telefone: <input type="tel" id="fone"></p> <!-- CAMPO PARA TELEFONE -->
+  <p> Digite seu e-mail: <input type="email" id="e-mail"></p> <!-- CAMPO PARA E-MAILL -->
+ 	<p> Digite sua senha:<input type="password" id="senha"></p> <!-- CAMPO PARA SENHA/PASSWORLD -->
+    <div>
+    	Selecione qual(is) destes idiomas você fala: <!-- CHECKBOX- SELECIONAR MAIS DE UMA OPÇÃO -->
+      <hr>
+    	<label for="info"> Inglês </label>
+    	<input type="checkbox" id="info"> <br>
+    	<label for="adm"> Espanhol </label>
+    	<input type="checkbox" id="adm"> <br>
+    	<label for="enf"> Alemão <!DOCTYPE html>
+      <html>
+      <head>
+         <meta charset="utf-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1">
+         <title></title>
+      </head>
+      <body>
+      
+      </body>
+      </html> </label>
+    	<input type="checkbox" id="enf"> <br>
+    </div>
+    <fieldset>
+    	<legend> Selecione o seu curso: </legend> <!-- CAMPO DO TIPO RÁDIO- SELECIONA APENAS UMA OPÇÃO -->
+    	<label for="info2"> Informática </label>
+    	<input type="radio" name="seucurso" id="info2"> <br>
+    	<label for="adm2"> Adminstração </label>
+    	<input type="radio" name="seucurso" id="adm2"> <br>
+    	<label for="enf2"> Enfermagem </label>
+    	<input type="radio" name="seucurso" id="enf2"> <br>
+    </fieldset>
+    <fieldset>
+    	<legend> Campo Oculto </legend>
+    	<input type="hidden" name="oculto" id="oculto" value=".">
+    </fieldset>
+    <fieldset>
+    	<legend> Digite ou selecione a sua idade: </legend> <!-- CAMPO PARA NÚMEROS- POSITIVOS E NEGATIVOS -->
+    	<input type="number" name="num" id="num">
+    </fieldset>
+    <fieldset>
+    	<legend> Qual o dia do seu nascimento? </legend> <!-- CAMPO PARA DATA- dia/mês/ano -->
+    	<input type="date" name="data" id="data">
+    </fieldset>
+    <fieldset>
+    	<legend> À que horas você acorda? </legend> <!-- CAMPO PARA HORA -->
+    	<input type="time" name="hora" id="hora">
+    </fieldset>
+    <fieldset>
+    	<legend> Arraste o cursor e selecione um valor: </legend> <!-- CAMPO RANGE- SETINHA/LINHA DE VALOR -->
+    	<input type="range" id="range" min="10" max="100">
+    </fieldset>
+
+        <fieldset>
+      <legend> Escolha sua cor favorita</legend> <!-- SELECIONAR OPÇÃO -->
+      <label for="priFaixa"> Cor:  </label>
+      <select name="priFaixa" id="priFaixa">
+         <option value="0"> Preta</option>
+         <option value="2"> Marrom</option>
+         <option value="3"> Vermelho</option>
+         <option value="0"> Laranja</option>
+         <option value="0"> Verde </option>
+         <option value="0"> Cinza </option>
+         <option value="0"> Rosa </option>
+         <option value="0"> Amarelo </option>
+         <option value="0"> Azul </option>
+      </select>
+   </fieldset>
+
+    <p><button type="button" onclick="pegarDados()"> ENVIAR RESPOSTAS </button></p> <!-- SUBMETER FORMULÁRIO- VALIDAR RESPOSTAS -->
+    <p><button type="reset"> LIMPAR FORMULÁRIO </button></p> <!-- RSETAR/LIMPAR FORMULÁRIO -->
+ </form>
+ <hr>
+ <div id="resumo" class="hide"></div>
+ <div class="esconder"> Suas respostas: </div> <!-- RESUMO DAS RESPOSTAS DO FRMULÁRIO -->
+ <div id="camText">
+ </div>
+ <div id="campTel">
+</div>
+<div id="camEmail">
+</div>
+<div id="camSenha"></div>
+<div id="campoinfo"></div>
+<div id="campoadm"></div>
+<div id="campoenf"></div>
+<div id="camporadio"></div>
+<div id="campooculto"></div>
+<div id="camponum"></div>
+<div id="campodata"></div>
+<div id="campohora"></div>
+<div id="camporange"></div>
+<div id="campofaixa"></div>
+
+ <!--<script type="text/javascript">
+ 	function pegarDados(){
+ 		alert("ok");
+ 	}
+ </script>-->
+ <div></div>
+ <script src="script.js"></script>
+</body>
+</html>
